@@ -1,0 +1,9 @@
+.activities {
+  &__list {
+    display: flex;
+  }
+
+  &__card {
+    margin-left: size(25px);
+  }
+}

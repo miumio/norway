@@ -2,10 +2,15 @@
   margin: 0;
 
   font-weight: 500;
-  font-size: size(30px);
-  line-height: size(37px);
   text-align: center;
   letter-spacing: 0.55em;
+  text-transform: uppercase;
 
-  color: rgba($color-white, 0.7);
+  opacity: 0.7;
+
+  &--big {
+    font-size: size(30px);
+    line-height: size(37px);
+  }
+
 }

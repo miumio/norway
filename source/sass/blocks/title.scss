@@ -2,10 +2,10 @@
   margin: 0;
 
   text-align: center;
+  line-height: 1.5;
 
   &--xl {
     font-size: size(250px);
-    line-height: 1.2;
 
     @include vp-1439 {
       font-size: size(180px);
@@ -14,5 +14,18 @@
     @include vp-1279 {
       font-size: size(140px);
     }
+  }
+
+  &--md {
+    font-size: size(46px);
+  }
+
+  &--sm {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  &--left {
+    text-align: left;
   }
 }

@@ -2,14 +2,11 @@
   position: relative;
   display: flex;
   aspect-ratio: 4/3;
-  // min-height: size(1024px);
+
+  margin-bottom: size(72px);
   padding: size(28px);
 
   color: $color-white;
-
-  @include vp-1439 {
-    // min-height: size(820px);
-  }
 
   &__wrapper {
     display: flex;
