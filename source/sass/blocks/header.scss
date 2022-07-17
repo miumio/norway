@@ -1,13 +1,37 @@
 .header {
-  padding: 28px 0;
+  position: relative;
+  display: flex;
+  aspect-ratio: 4/3;
+  // min-height: size(1024px);
+  padding: size(28px);
 
-  background-color: $color-neon-blue;
+  color: $color-white;
 
-  .container {
-    display: flex;
+  @include vp-1439 {
+    // min-height: size(820px);
   }
 
-  &__logo {
-    color: $color-default-white;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    z-index: 1;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title {
+    margin: auto 0;
+    padding: size(30px) 0;
+  }
+
+  &__locations {
+    padding: 0 size(100px);
   }
 }

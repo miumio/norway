@@ -1,16 +1,18 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {initCustomSelect} from './modules/form/init-custom-select';
-import {initFormValidate} from './modules/form/init-form-validate';
+// import {iosVhFix} from './utils/ios-vh-fix';
+// import {initModals} from './modules/modals/init-modals';
+// import {initCustomSelect} from './modules/form/init-custom-select';
+// import {initFormValidate} from './modules/form/init-form-validate';
+import { initMainSlider } from './modules/init-main-slider'
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  initMainSlider();
 
   // Utils
   // ---------------------------------
 
-  iosVhFix();
+  // iosVhFix();
 
   // Modules
   // ---------------------------------
@@ -18,9 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
-    initCustomSelect();
-    initFormValidate();
+    // initModals();
+    // initCustomSelect();
+    // initFormValidate();
   });
 });
 

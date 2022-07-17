@@ -80,12 +80,12 @@ const copyImages = () => {
 };
 
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
       ]))
-      .pipe(gulp.dest('build/img'));
+      .pipe(gulp.dest('source/img'));
 };
 
 // Используйте отличное от дефолтного значение root, если нужно обработать отдельную папку в img,
@@ -123,7 +123,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,

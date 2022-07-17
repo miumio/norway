@@ -1,0 +1,8 @@
+mixin location(data)
+
+  .location
+    +icon("icon-pin", 32, 32).location__icon
+    h4.location__title.title !{data.title}
+    a.location__link(href="#") Plan to trip
+
+

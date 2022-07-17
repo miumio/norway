@@ -1,27 +1,32 @@
 .main-nav {
-  &__list {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
 
-    list-style: none;
+  &__logo {
+    margin-right: auto;
   }
 
-  &__item {
-    margin-right: 20px;
+  &__list {
+    max-width: 50%;
+    justify-content: flex-end;
   }
 
   &__link {
-    color: $color-default-white;
+    padding: size(20px);
 
-    &.is-active {
-      opacity: 0.6;
+    color: inherit;
+    text-decoration: none;
+
+    opacity: 0.8;
+    transition: opacity $trans-default;
+
+    @include hover {
+      opacity: 1;
     }
   }
 
-  &__toggle {
-    display: none;
+  &__link:last-child {
+    padding-right: 0;
   }
 }

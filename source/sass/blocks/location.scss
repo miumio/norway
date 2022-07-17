@@ -1,0 +1,51 @@
+.location {
+  position: relative;
+  padding: 1rem;
+  padding-left: 4rem;
+
+  box-shadow: inset 0 0 1px $color-white;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    flex-shrink: 0;
+
+    width: size(32px);
+    height: size(32px);
+
+    transform: translateY(-50%);
+  }
+
+
+  &__link,
+  &__icon {
+    opacity: 0.4;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity $trans-default;
+
+    font-size: size(14px);
+
+    @include hover {
+      opacity: 1;
+    }
+  }
+
+  &__link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+  }
+}

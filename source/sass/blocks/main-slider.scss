@@ -1,0 +1,16 @@
+:root {
+  --swiper-theme-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-height: 4rem;
+  --swiper-pagination-bullet-width: 0.2rem;
+}
+
+.main-slider {
+  .swiper-pagination {
+    z-index: 10;
+  }
+
+  .swiper-pagination-bullet {
+    border-radius: 2px;
+  }
+}

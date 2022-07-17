@@ -1,0 +1,11 @@
+.locations-list {
+  &__item {
+    margin-left: size(27px);
+    margin-bottom: size(27px);
+    flex: 1;
+  }
+
+  &__item:first-child {
+    margin-left: 0;
+  }
+}

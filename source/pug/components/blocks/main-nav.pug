@@ -1,0 +1,17 @@
+mixin main-nav(currentUrl, headerLinks)
+
+  nav.main-nav
+    if(currentUrl === "index.html")
+      +logo().main-nav__logo
+    else
+      a.header__logo(href="index.html" aria-label="Go to main page")
+        +logo()
+
+    ul.list-reset.flex.main-nav__list
+      each link in headerLinks
+        - const activeState = currentUrl === link.href
+        li.main-nav__item
+          if(activeState)
+            span.main-nav__link.is-active=link.text
+          else
+            a.main-nav__link(href=link.href)=link.text
